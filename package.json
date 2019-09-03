@@ -1,0 +1,30 @@
+{
+  "name": "untitled",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "email-validator": "^2.0.4",
+    "events": "^3.0.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.6",
+    "mongoose-plugin-autoinc": "^1.1.9",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "~1.9.1",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.0",
+    "passport-localapikey-update": "^0.6.0",
+    "pug": "2.0.0-beta11",
+    "pwd": "^1.1.0",
+    "uuid": "^3.3.2"
+  }
+}
