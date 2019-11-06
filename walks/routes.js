@@ -14,8 +14,7 @@ router.get('/', authenticate, async (req, res, next) => {
   let limit = parseInt(req.query.limit) || 10
   console.log(req.query.filter)
   let filter = req.query.filter
-  if (filter !== '{}') {
-    console.log('sss')
+  if (filter) {
     query = Object.assign(query, {createdBy: req.query.filter})
   }
   console.log(query)
@@ -30,7 +29,7 @@ router.get('/', authenticate, async (req, res, next) => {
   res.set('X-Total-Count', count)
   res.set('X-Total-Pages', limit ? Math.ceil(count / limit) : 1)
   res.set('X-Current-Page', page || 1)
-  console.log('Bye')
+  console.log('Bye', walks)
   res.json({walks})
 })
 
